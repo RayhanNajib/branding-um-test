@@ -1,108 +1,35 @@
-// JAVASCRIPT LOGIC UNTUK TES BRANDING UM
+// JAVASCRIPT LOGIC UNTUK TES BRANDING UM (DESIGN SYSTEM PENDIDIKAN)
 
 document.addEventListener("DOMContentLoaded", () => {
-  initTabMenu();
   initCalendar();
+  initAccordion();
   initFolkcastCards();
 });
 
 /* ==========================================================================
-   1. TAB MENU LOGIC (SOAL 2)
+   1. KALENDER AKADEMIK (SOAL 3 REVISI image_490e65)
    ========================================================================== */
-function initTabMenu() {
-  const tabs = document.querySelectorAll(".tab-item");
-  const panes = document.querySelectorAll(".tab-pane");
-
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      const targetId = tab.getAttribute("data-tab");
-
-      tabs.forEach(t => {
-        t.classList.remove("active");
-        t.setAttribute("aria-selected", "false");
-      });
-
-      panes.forEach(p => p.classList.remove("active"));
-
-      tab.classList.add("active");
-      tab.setAttribute("aria-selected", "true");
-
-      const targetPane = document.getElementById(`pane-${targetId}`);
-      if (targetPane) {
-        targetPane.classList.add("active");
-      }
-    });
-  });
-}
-
-/* ==========================================================================
-   2. KALENDER AKADEMIK & TANGGAL PENTING (SOAL 3)
-   ========================================================================== */
-const kalenderData = {
-  "tahun_akademik": "2026/2027",
-  "kegiatan_pembelajaran": [
-    {
-      "kode": "A.1",
-      "kegiatan": "PKKMB (Pengenalan Kehidupan Kampus bagi Mahasiswa Baru)",
-      "smt_gasal_2026_2027": "10-14 Agustus 2026"
-    },
-    {
-      "kode": "A.2",
-      "kegiatan": "Permohonan cuti kuliah on-line (Mahasiswa Lama)",
-      "smt_gasal_2026_2027": "29 Juni – 11 September 2026"
-    },
-    {
-      "kode": "A.3.a",
-      "kegiatan": "Unggah Sajian Mata Kuliah Universiter (MKU)",
-      "smt_gasal_2026_2027": "29 Juni – 10 Juli 2026"
-    },
-    {
-      "kode": "A.3.b",
-      "kegiatan": "Unggah Sajian Mata Kuliah Program Studi",
-      "smt_gasal_2026_2027": "06 – 17 Juli 2026"
-    },
-    {
-      "kode": "A.4",
-      "kegiatan": "Pembayaran UKT/SPP Mahasiswa Lama",
-      "smt_gasal_2026_2027": "06 Juli – 14 Agustus 2026"
-    },
-    {
-      "kode": "A.5",
-      "kegiatan": "Registrasi Akademik (KRS) Mahasiswa Lama",
-      "smt_gasal_2026_2027": "13 Juli – 14 Agustus 2026"
-    },
-    {
-      "kode": "A.6",
-      "kegiatan": "Awal Kuliah Semester Gasal 2026/2027",
-      "smt_gasal_2026_2027": "18 Agustus 2026"
-    },
-    {
-      "kode": "A.7",
-      "kegiatan": "Perubahan KRS (Batal Tambah)",
-      "smt_gasal_2026_2027": "24 - 28 Agustus 2026"
-    },
-    {
-      "kode": "A.8",
-      "kegiatan": "Ujian Tengah Semester (UTS)",
-      "smt_gasal_2026_2027": "05 – 09 Oktober 2026"
-    },
-    {
-      "kode": "A.9",
-      "kegiatan": "Ujian Akhir Semester (UAS)",
-      "smt_gasal_2026_2027": "07 – 18 Desember 2026"
-    }
-  ]
-};
-
-let currentMonth = 6; // July (0-indexed: 6 = July)
+let currentMonth = 8; // September (0-indexed: 8 = Sept)
 let currentYear = 2026;
 
-function initCalendar() {
-  renderCalendarDays(currentYear, currentMonth);
-  renderKegiatanList();
+const eventsMap = {
+  "2026-9-1": ["Permohonan cuti kuliah online", "Penyisiran Status Mahasiswa", "Mengecek eligibilitas PISN", "Pelaksanaan Ekstrakurikuler", "Awal Kuliah Semester Ganjil"],
+  "2026-9-2": ["Permohonan cuti kuliah online", "Penyisiran Status Mahasiswa", "Unggah Sajian Mata Kuliah"],
+  "2026-9-3": ["Permohonan cuti kuliah online", "Mengecek eligibilitas PISN", "Pelaksanaan Ekstrakurikuler"],
+  "2026-9-4": ["Permohonan cuti kuliah online", "Penyisiran Status Mahasiswa", "Pelaksanaan Ekstrakurikuler"],
+  "2026-9-5": ["Pelaksanaan Ekstrakurikuler"],
+  "2026-9-7": ["Pelaksanaan Ekstrakurikuler", "Pengajuan Capaian KRE"],
+  "2026-9-8": ["Verifikasi Capaian KRE"],
+  "2026-9-9": ["Validasi Capaian KRE"],
+  "2026-9-10": ["Masa Perkuliahan Semester Ganjil"],
+  "2026-9-11": ["Batas Akhir Cuti Kuliah Online"]
+};
 
-  const prevBtn = document.getElementById("cal-prev");
-  const nextBtn = document.getElementById("cal-next");
+function initCalendar() {
+  renderGrid(currentYear, currentMonth);
+
+  const prevBtn = document.getElementById("kaPrev");
+  const nextBtn = document.getElementById("kaNext");
 
   if (prevBtn && nextBtn) {
     prevBtn.addEventListener("click", () => {
@@ -111,7 +38,7 @@ function initCalendar() {
         currentMonth = 11;
         currentYear--;
       }
-      renderCalendarDays(currentYear, currentMonth);
+      renderGrid(currentYear, currentMonth);
     });
 
     nextBtn.addEventListener("click", () => {
@@ -120,81 +47,100 @@ function initCalendar() {
         currentMonth = 0;
         currentYear++;
       }
-      renderCalendarDays(currentYear, currentMonth);
+      renderGrid(currentYear, currentMonth);
     });
   }
 }
 
-function renderCalendarDays(year, month) {
+function renderGrid(year, month) {
   const monthNames = [
     "Januari", "Februari", "Maret", "April", "Mei", "Juni",
     "Juli", "Agustus", "September", "Oktober", "November", "Desember"
   ];
 
-  const titleEl = document.getElementById("cal-month-name");
+  const titleEl = document.getElementById("kaTitle");
   if (titleEl) {
     titleEl.textContent = `${monthNames[month]} ${year}`;
   }
 
-  const daysGrid = document.getElementById("calendar-days");
-  if (!daysGrid) return;
+  const gridEl = document.getElementById("kaGrid");
+  if (!gridEl) return;
 
-  daysGrid.innerHTML = "";
+  gridEl.innerHTML = "";
 
   const firstDay = new Date(year, month, 1).getDay();
   const startOffset = (firstDay === 0 ? 6 : firstDay - 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
-  const eventDays = (month === 6 && year === 2026) ? [6, 10, 13, 17, 29] : (month === 7 && year === 2026 ? [10, 14, 18, 24, 28] : []);
+  const prevMonthDays = new Date(year, month, 0).getDate();
 
-  for (let i = 0; i < startOffset; i++) {
-    const emptyCell = document.createElement("div");
-    emptyCell.className = "cal-day empty";
-    daysGrid.appendChild(emptyCell);
+  // Previous month outside cells
+  for (let i = startOffset - 1; i >= 0; i--) {
+    const prevDay = prevMonthDays - i;
+    const cell = document.createElement("div");
+    cell.className = "ka-cell ka-outside";
+    cell.innerHTML = `<div class="ka-date">${prevDay}</div>`;
+    gridEl.appendChild(cell);
   }
 
+  // Current month cells
+  const dotColors = ["dot-yellow", "dot-green", "dot-blue"];
+
   for (let day = 1; day <= daysInMonth; day++) {
-    const dayCell = document.createElement("div");
-    dayCell.className = "cal-day";
-    dayCell.textContent = day;
+    const cell = document.createElement("div");
+    cell.className = "ka-cell";
 
-    if (eventDays.includes(day)) {
-      dayCell.classList.add("has-event");
-      dayCell.title = "Ada kegiatan akademik pada tanggal ini";
+    let eventsHtml = "";
+    const key = `${year}-${month + 1}-${day}`;
+    if (eventsMap[key]) {
+      eventsHtml = `<div class="ka-events-wrapper">`;
+      eventsMap[key].forEach((ev, idx) => {
+        const dotClass = dotColors[idx % 3];
+        eventsHtml += `
+          <div class="ka-event-item" title="${ev}">
+            <span class="ka-event-dot ${dotClass}"></span>
+            <span>${ev}</span>
+          </div>
+        `;
+      });
+      eventsHtml += `</div>`;
     }
 
-    if (day === 16 && month === 8 && year === 2026) {
-      dayCell.classList.add("today");
-    }
+    cell.innerHTML = `
+      <div class="ka-date">${day}</div>
+      ${eventsHtml}
+    `;
 
-    daysGrid.appendChild(dayCell);
+    gridEl.appendChild(cell);
+  }
+
+  // Fill remaining cells for 35 cell grid (5 rows x 7 cols)
+  const totalRendered = startOffset + daysInMonth;
+  const remaining = 35 - totalRendered;
+  if (remaining > 0) {
+    for (let i = 1; i <= remaining; i++) {
+      const cell = document.createElement("div");
+      cell.className = "ka-cell ka-outside";
+      cell.innerHTML = `<div class="ka-date">${i}</div>`;
+      gridEl.appendChild(cell);
+    }
   }
 }
 
-function renderKegiatanList() {
-  const container = document.getElementById("kegiatan-list-container");
-  if (!container) return;
-
-  container.innerHTML = "";
-
-  kalenderData.kegiatan_pembelajaran.forEach(item => {
-    const itemEl = document.createElement("div");
-    itemEl.className = "kegiatan-item";
-
-    itemEl.innerHTML = `
-      <div class="kegiatan-title">${item.kode}: ${item.kegiatan}</div>
-      <div class="kegiatan-date">
-        <span>📅</span>
-        <span>${item.smt_gasal_2026_2027 || 'Jadwal menyesuaikan'}</span>
-      </div>
-    `;
-
-    container.appendChild(itemEl);
+/* ==========================================================================
+   2. SIDEBAR ACCORDION TOGGLE
+   ========================================================================== */
+function initAccordion() {
+  const heads = document.querySelectorAll(".ka-accordion-head");
+  heads.forEach(head => {
+    head.addEventListener("click", () => {
+      const item = head.parentElement;
+      item.classList.toggle("open");
+    });
   });
 }
 
-
 /* ==========================================================================
-   3. FOLKCAST 3-CARD LAYOUT EXACT PDF REVISION (SOAL 5)
+   3. FOLKCAST 3-CARD LAYOUT (SOAL 5)
    ========================================================================== */
 const folkcast3Cards = [
   {

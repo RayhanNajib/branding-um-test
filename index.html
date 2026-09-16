@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tes Web Developer - Tim Branding UM</title>
+  <title>Tes Web Developer — Tim Branding UM</title>
   <!-- Google Fonts: Albert Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,29 @@
 </head>
 <body>
 
+  <!-- SVG SPRITE SYSTEM -->
+  <svg style="display: none;">
+    <symbol id="icon-fak" viewBox="0 0 235 235">
+      <path d="M117.067 64.3561C110.881 64.3561 105.767 69.4079 106.835 75.5012C107.644 80.1143 108.954 84.6361 110.749 88.9841C113.973 96.7921 118.698 103.887 124.655 109.863C130.612 115.839 137.684 120.579 145.467 123.813C149.78 125.605 154.263 126.915 158.838 127.727C164.948 128.812 170.017 123.681 170.017 117.475C170.017 111.269 164.897 106.386 158.916 104.731C157.261 104.273 155.633 103.712 154.04 103.05C148.975 100.946 144.373 97.8605 140.496 93.9714C136.619 90.0822 133.544 85.4651 131.446 80.3838C130.777 78.7645 130.212 77.1083 129.752 75.425C128.122 69.4574 123.253 64.3561 117.067 64.3561Z" fill="currentColor" fill-opacity="0.4"></path>
+      <path d="M117.067 170.644C110.881 170.644 105.767 165.592 106.835 159.499C107.644 154.886 108.954 150.364 110.749 146.016C113.973 138.208 118.698 131.113 124.655 125.137C130.612 119.161 137.684 114.421 145.467 111.187C149.78 109.395 154.263 108.085 158.838 107.273C164.948 106.188 170.017 111.319 170.017 117.525C170.017 123.731 164.897 128.614 158.916 130.269C157.261 130.727 155.633 131.288 154.04 131.95C148.975 134.054 144.373 137.14 140.496 141.029C136.619 144.918 133.544 149.535 131.446 154.616C130.777 156.235 130.212 157.892 129.752 159.575C128.122 165.543 123.253 170.644 117.067 170.644Z" fill="currentColor" fill-opacity="0.4"></path>
+      <path d="M117.101 64.3561C123.287 64.3561 128.401 69.4079 127.333 75.5012C126.524 80.1143 125.214 84.6361 123.419 88.9841C120.195 96.7921 115.47 103.887 109.513 109.863C103.556 115.839 96.4839 120.579 88.7007 123.813C84.3884 125.605 79.9047 126.915 75.3304 127.727C69.2199 128.812 64.1511 123.681 64.1511 117.475C64.1511 111.269 69.2709 106.386 75.2521 104.731C76.9068 104.273 78.5352 103.712 80.1277 103.05C85.1929 100.946 89.7953 97.8605 93.6721 93.9714C97.5488 90.0822 100.624 85.4651 102.722 80.3838C103.391 78.7645 103.956 77.1083 104.416 75.425C106.046 69.4574 110.915 64.3561 117.101 64.3561Z" fill="currentColor" fill-opacity="0.4"></path>
+      <path d="M117.101 170.636C123.287 170.636 128.401 165.584 127.333 159.491C126.524 154.878 125.214 150.356 123.419 146.008C120.195 138.2 115.47 131.105 109.513 125.129C103.556 119.153 96.4839 114.413 88.7007 111.179C84.3884 109.387 79.9047 108.077 75.3304 107.265C69.2199 106.18 64.1511 111.311 64.1511 117.517C64.1511 123.723 69.2709 128.606 75.2521 130.262C76.9068 130.719 78.5352 131.28 80.1277 131.942C85.1929 134.047 89.7953 137.132 93.6721 141.021C97.5488 144.91 100.624 149.527 102.722 154.608C103.391 156.228 103.956 157.884 104.416 159.567C106.046 165.535 110.915 170.636 117.101 170.636Z" fill="currentColor" fill-opacity="0.4"></path>
+    </symbol>
+
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-download" viewBox="0 0 24 24">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
   <header class="main-header">
     <div class="container">
       <div class="header-badge">TECHNICAL TEST</div>
       <h1>Tes Web Developer — Tim Branding UM</h1>
-      <p class="subtitle">Implementasi Komponen Website & Regulasi Branding Universitas Negeri Malang</p>
+      <p class="subtitle">Implementasi Komponen Website & Regulasi Branding Universitas Negeri Malang (Design System Pendidikan)</p>
     </div>
   </header>
 
@@ -51,203 +69,272 @@
     </section>
 
 
-    <!-- SOAL 2: TAB MENU FRAGMENT -->
+    <!-- SOAL 2: TAB MENU FRAGMENT (REVISI FAK-WRAPPER PILIH FAKULTAS) -->
     <section class="test-section" id="soal-2">
       <div class="section-header">
         <span class="soal-number">02</span>
-        <h2>Tab-Menu Fragment (Desktop & Responsive Mobile)</h2>
+        <h2>Fragment Tab Menu — Pilih Fakultas (Revisi Sesuai um.ac.id/pendidikan)</h2>
       </div>
       <p class="section-desc">
-        Fragment tab menu interaktif dengan navigasi vertikal/horizontal dan konten panel responsive.
+        Fragment tab menu rekomendasi resmi dengan pill-buttons `fak-btn` dan ikon 4 kelopak khas UM (`#icon-fak`).
       </p>
 
-      <div class="tab-fragment-container">
-        <!-- Sidebar Navigation -->
-        <nav class="tab-nav" role="tablist" aria-label="Menu Informasi Akademik">
-          <button class="tab-item active" role="tab" aria-selected="true" data-tab="profil">
-            <span>Profil Singkat</span>
-          </button>
-          <button class="tab-item" role="tab" aria-selected="false" data-tab="prospek">
-            <span>Prospek Karir</span>
-          </button>
-          <button class="tab-item" role="tab" aria-selected="false" data-tab="kurikulum">
-            <span>Kurikulum & Capaian</span>
-          </button>
-          <button class="tab-item" role="tab" aria-selected="false" data-tab="fasilitas">
-            <span>Fasilitas Pendukung</span>
-          </button>
-        </nav>
+      <!-- Radios for tab switching -->
+      <input type="radio" name="tab-fak" id="tab1" checked style="display:none">
+      <input type="radio" name="tab-fak" id="tab2" style="display:none">
+      <input type="radio" name="tab-fak" id="tab3" style="display:none">
+      <input type="radio" name="tab-fak" id="tab4" style="display:none">
+      <input type="radio" name="tab-fak" id="tab5" style="display:none">
+      <input type="radio" name="tab-fak" id="tab6" style="display:none">
+      <input type="radio" name="tab-fak" id="tab7" style="display:none">
+      <input type="radio" name="tab-fak" id="tab8" style="display:none">
 
-        <!-- Content Area -->
-        <div class="tab-content-area">
-          <div class="tab-pane active" id="pane-profil" role="tabpanel">
-            <h3>Profil Singkat Program</h3>
-            <p>Universitas Negeri Malang (UM) berkomitmen menyelenggarakan pendidikan tinggi berkualitas dunia dengan landasan nilai-nilai keunggulan, inovasi, dan pengabdian masyarakat. Program ini dirancang untuk membekali mahasiswa dengan keahlian teknis mutakhir serta kompetensi kepemimpinan adaptif.</p>
-            <p>Melalui kurikulum berbasis capaian (Outcome-Based Education) dan ekosistem riset terintegrasi, lulusan siap bersaing secara global dalam era transformasi digital.</p>
+      <div class="fak-wrapper">
+        <div class="fak-sidebar">
+          <div class="fak-sidebar-title">Pilih Fakultas</div>
+          <label for="tab1" class="fak-btn btn1"><svg class="icon-dibagian-sidebar-link" width="20" height="20"><use href="#icon-fak"></use></svg>Fakultas Ilmu Pendidikan</label>
+          <label for="tab2" class="fak-btn btn2"><svg class="icon-dibagian-sidebar-link" width="20" height="20"><use href="#icon-fak"></use></svg>Fakultas Sastra</label>
+          <label for="tab3" class="fak-btn btn3"><svg class="icon-dibagian-sidebar-link" width="20" height="20"><use href="#icon-fak"></use></svg>Fakultas MIPA</label>
+          <label for="tab4" class="fak-btn btn4"><svg class="icon-dibagian-sidebar-link" width="20" height="20"><use href="#icon-fak"></use></svg>Fakultas Ekonomi dan Bisnis</label>
+          <label for="tab5" class="fak-btn btn5"><svg class="icon-dibagian-sidebar-link" width="20" height="20"><use href="#icon-fak"></use></svg>Fakultas Teknik</label>
+          <label for="tab6" class="fak-btn btn6"><svg class="icon-dibagian-sidebar-link" width="20" height="20"><use href="#icon-fak"></use></svg>Fakultas Ilmu Keolahragaan</label>
+          <label for="tab7" class="fak-btn btn7"><svg class="icon-dibagian-sidebar-link" width="20" height="20"><use href="#icon-fak"></use></svg>Fakultas Ilmu Sosial</label>
+          <label for="tab8" class="fak-btn btn8"><svg class="icon-dibagian-sidebar-link" width="20" height="20"><use href="#icon-fak"></use></svg>Fakultas Psikologi</label>
+        </div>
+
+        <div class="fak-content">
+          <div class="fak-tab" id="c1">
+            <h3 class="fak-hero-title">Fakultas Ilmu Pendidikan (FIP)</h3>
+            <p class="fak-body">Mencetak pendidik profesional, inovatif, dan berwawasan global melalui kurikulum keilmuan pendidikan yang terintegrasi dengan teknologi pembelajaran modern.</p>
           </div>
-
-          <div class="tab-pane" id="pane-prospek" role="tabpanel">
-            <h3>Prospek Karir & Alumni</h3>
-            <p>Lulusan memiliki jangkauan karir yang luas di berbagai industri strategis, lembaga pemerintah, startup teknologi, hingga institusi internasional. Jalur karir mencakup Web Developer, UI/UX Designer, System Architect, Digital Strategist, dan Technology Consultant.</p>
-            <p>Kemitraan luas UM dengan dunia industri memastikan tingkat penyerapan kerja lulusan tinggi dengan daya saing kompetitif.</p>
+          <div class="fak-tab" id="c2">
+            <h3 class="fak-hero-title">Fakultas Sastra (FS)</h3>
+            <p class="fak-body">Mengembangkan keahlian dalam bidang bahasa, sastra, seni, dan desain dengan orientasi pelestarian budaya serta daya saing internasional.</p>
           </div>
-
-          <div class="tab-pane" id="pane-kurikulum" role="tabpanel">
-            <h3>Kurikulum & Struktur Pembelajaran</h3>
-            <p>Struktur kurikulum mencakup mata kuliah keahlian inti, laboratorium praktikal, proyek kolaboratif, serta program Merdeka Belajar Kampus Merdeka (MBKM) seperti magang industri dan riset independen.</p>
+          <div class="fak-tab" id="c3">
+            <h3 class="fak-hero-title">Fakultas Matematika dan IPA (FMIPA)</h3>
+            <p class="fak-body">Pusat keunggulan sains murni dan pendidikan sains yang berdaya saing tinggi dalam riset dan inovasi sains abad 21.</p>
           </div>
-
-          <div class="tab-pane" id="pane-fasilitas" role="tabpanel">
-            <h3>Fasilitas & Infrastruktur</h3>
-            <p>Didukung oleh laboratorium komputer generasi terbaru, ruang kolaborasi kreatif, perpustakaan digital berakses jurnal internasional, serta jaringan internet terdistribusi di seluruh kawasan kampus.</p>
+          <div class="fak-tab" id="c4">
+            <h3 class="fak-hero-title">Fakultas Ekonomi dan Bisnis (FEB)</h3>
+            <p class="fak-body">Menyelenggarakan pendidikan ekonomi, manajemen, dan akuntansi berbasis kewirausahaan digital dan nilai-nilai etika profesional.</p>
+          </div>
+          <div class="fak-tab" id="c5">
+            <h3 class="fak-hero-title">Fakultas Teknik (FT)</h3>
+            <p class="fak-body">Menghasilkan insinyur dan tenaga ahli rekayasa teknologi mutakhir yang solutif untuk kebutuhan industri berkelanjutan.</p>
+          </div>
+          <div class="fak-tab" id="c6">
+            <h3 class="fak-hero-title">Fakultas Ilmu Keolahragaan (FIK)</h3>
+            <p class="fak-body">Mengembangkan ilmu keolahragaan, kesehatan masyarakat, dan sains kepelatihan berprestasi dunia.</p>
+          </div>
+          <div class="fak-tab" id="c7">
+            <h3 class="fak-hero-title">Fakultas Ilmu Sosial (FIS)</h3>
+            <p class="fak-body">Pendidikan keilmuan sosial, geografi, dan kewarganegaraan berperspektif inklusif dan keindonesiaan.</p>
+          </div>
+          <div class="fak-tab" id="c8">
+            <h3 class="fak-hero-title">Fakultas Psikologi (FPsi)</h3>
+            <p class="fak-body">Mengembangkan potensi perilaku dan kesehatan mental manusia melalui asesmen dan intervensi psikologi teruji.</p>
           </div>
         </div>
       </div>
     </section>
 
 
-    <!-- SOAL 3: KALENDER AKADEMIK (JS OBJECT PARSING) -->
+    <!-- SOAL 3: KALENDER AKADEMIK REVISI PENUH (STYLE image_490e65) -->
     <section class="test-section" id="soal-3">
       <div class="section-header">
         <span class="soal-number">03</span>
-        <h2>Kalender Akademik & Tanggal Penting (JS Object Parser)</h2>
+        <h2>Kalender Akademik & Tanggal Penting (Revisi Desain Resmi UM)</h2>
       </div>
       <p class="section-desc">
-        Visualisasi data objek JavaScript Kalender Akademik 2026/2027 menjadi widget kalender & daftar kegiatan.
+        Tampilan grid kalender presisi dengan header hari, event dots per cell, dan sidebar accordion per semester.
       </p>
 
-      <div class="kalender-layout">
-        <!-- Calendar Grid Card -->
-        <div class="calendar-card">
-          <div class="calendar-header">
-            <button class="cal-nav-btn" id="cal-prev" aria-label="Bulan Sebelumnya">&lt;</button>
-            <h3 class="cal-month-title" id="cal-month-name">Juli 2026</h3>
-            <button class="cal-nav-btn" id="cal-next" aria-label="Bulan Berikutnya">&gt;</button>
+      <div class="ka-wrap">
+        <!-- KALENDER GRID -->
+        <div class="ka-calendar">
+          <div class="ka-nav">
+            <button class="ka-nav-btn ka-prev" id="kaPrev" aria-label="Bulan sebelumnya">&lt;</button>
+
+            <div class="ka-title-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#012060" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <div class="ka-title" id="kaTitle">September 2026</div>
+            </div>
+
+            <button class="ka-nav-btn ka-next" id="kaNext" aria-label="Bulan berikutnya">&gt;</button>
           </div>
 
-          <div class="calendar-grid-header">
-            <span>Senin</span>
-            <span>Selasa</span>
-            <span>Rabu</span>
-            <span>Kamis</span>
-            <span>Jumat</span>
-            <span>Sabtu</span>
-            <span>Minggu</span>
+          <div class="ka-grid-head">
+            <div>Senin</div>
+            <div>Selasa</div>
+            <div>Rabu</div>
+            <div>Kamis</div>
+            <div>Jum’at</div>
+            <div>Sabtu</div>
+            <div>Minggu</div>
           </div>
 
-          <div class="calendar-days-grid" id="calendar-days">
+          <div class="ka-grid" id="kaGrid">
             <!-- Rendered by JS -->
+          </div>
+
+          <div class="ka-download-bar">
+            <a href="#" class="ka-btn-download">
+              <svg width="18" height="18"><use href="#icon-download"></use></svg>
+              <span>Unduh Kalender Akademik</span>
+            </a>
           </div>
         </div>
 
-        <!-- Tanggal Penting List -->
-        <div class="kegiatan-card">
-          <div class="kegiatan-header">
-            <h3>Tanggal Penting</h3>
-            <span class="badge-semester" id="semester-badge">Semester Gasal 2026/2027</span>
+        <!-- SIDEBAR ACCORDION -->
+        <div class="ka-sidebar">
+          <div class="ka-sidebar-title">Tanggal Penting</div>
+
+          <div class="ka-accordion-item open">
+            <div class="ka-accordion-head">
+              <span>Semester Ganjil</span>
+              <span class="ka-accordion-toggle">+</span>
+            </div>
+            <div class="ka-accordion-body">
+              <ul class="ka-accordion-list">
+                <li>
+                  <span class="ka-tgl">10 - 14 Agu 2026</span>
+                  <span>PKKMB Mahasiswa Baru</span>
+                </li>
+                <li>
+                  <span class="ka-tgl">29 Jun - 11 Sep 2026</span>
+                  <span>Permohonan cuti kuliah online</span>
+                </li>
+                <li>
+                  <span class="ka-tgl">06 - 14 Agu 2026</span>
+                  <span>Pembayaran UKT/SPP Mahasiswa Lama</span>
+                </li>
+                <li>
+                  <span class="ka-tgl">18 Agustus 2026</span>
+                  <span>Awal Kuliah Semester Ganjil</span>
+                </li>
+                <li>
+                  <span class="ka-tgl">05 - 09 Okt 2026</span>
+                  <span>Ujian Tengah Semester (UTS)</span>
+                </li>
+                <li>
+                  <span class="ka-tgl">07 - 18 Des 2026</span>
+                  <span>Ujian Akhir Semester (UAS)</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="kegiatan-list" id="kegiatan-list-container">
-            <!-- Rendered by JS -->
+
+          <div class="ka-accordion-item">
+            <div class="ka-accordion-head">
+              <span>Semester Genap</span>
+              <span class="ka-accordion-toggle">+</span>
+            </div>
+            <div class="ka-accordion-body">
+              <ul class="ka-accordion-list">
+                <li>
+                  <span class="ka-tgl">04 - 15 Jan 2027</span>
+                  <span>Registrasi Akademik (KRS) Smt Genap</span>
+                </li>
+                <li>
+                  <span class="ka-tgl">18 Januari 2027</span>
+                  <span>Awal Kuliah Semester Genap</span>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <div class="ka-accordion-item">
+            <div class="ka-accordion-head">
+              <span>Semester Antara</span>
+              <span class="ka-accordion-toggle">+</span>
+            </div>
+            <div class="ka-accordion-body">
+              <ul class="ka-accordion-list">
+                <li>
+                  <span class="ka-tgl">21 Juni 2027</span>
+                  <span>Awal Perkuliahan Semester Antara</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
 
-    <!-- SOAL 4: HOVER CARD & GRID SYSTEM -->
+    <!-- SOAL 4: CARD PRESTASI HOVER EFFECT EXPANDING BUTTON & GRID -->
     <section class="test-section" id="soal-4">
       <div class="section-header">
         <span class="soal-number">04</span>
-        <h2>Card Element with Hover Overlay & 12-Column Grid System</h2>
+        <h2>Card Prestasi with Expanding Corner Button & 12-Column Grid</h2>
       </div>
       <p class="section-desc">
-        Komponen card interaktif dengan overlay "Lihat Selengkapnya" saat dihover, serta sistem grid 4 baris 12 kolom.
+        Hover effect presisi: Tombol di pojok kiri atas awalnya berupa icon bulat (image_2ae114) dan memanjang secara otomatis saat hover (image_207803).
       </p>
 
-      <!-- Part A: Interactive Card -->
+      <!-- Part A: Hover Card with Expanding Corner Button -->
       <div class="card-demo-wrapper">
-        <h3 class="sub-title">Card Prestasi (Hover Effect Preview)</h3>
-        <div class="prestasi-card">
-          <div class="card-image-wrapper">
-            <img src="assets/prestasi.webp" alt="Prestasi UM" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&auto=format&fit=crop'">
-            <div class="card-overlay">
-              <a href="#" class="overlay-link">
-                <span>Lihat Selengkapnya</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
+        <h3 class="sub-title">Card Prestasi (Sliding Corner CTA Button Preview)</h3>
+        
+        <div class="cc-card">
+          <!-- Background Image Media -->
+          <div class="cc-media" style="background-image: url('assets/prestasi.webp');"></div>
+          
+          <!-- Expanding CTA Button at Top Left -->
+          <div class="cc-cta-btn">
+            <span class="cc-cta-text">Lihat Selengkapnya</span>
+            <div class="cc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </div>
           </div>
-          <div class="card-body">
-            <h3 class="card-title">Prestasi</h3>
-            <p class="card-text">
-              Prestasi mahasiswa, dosen, dan tenaga kependidikan Universitas Negeri Malang mencerminkan semangat berkarya, berinovasi, serta mengharumkan nama institusi di tingkat global.
-            </p>
-          </div>
+
+          <h3 class="cc-title">Prestasi</h3>
+          <p class="cc-excerpt">
+            Prestasi mahasiswa, dosen, dan tenaga kependidikan Universitas Negeri Malang mencerminkan semangat berkarya, berinovasi, serta mengharumkan nama institusi di tingkat global.
+          </p>
         </div>
       </div>
 
-      <!-- Part B: 4 Rows 12 Columns Grid -->
+      <!-- Part B: 12 Columns Grid System -->
       <div class="grid-demo-wrapper">
         <h3 class="sub-title">System Grid Style (4 Baris 12 Kolom)</h3>
         
         <div class="um-grid-container">
-          <!-- Row 1: Text Only -->
           <div class="grid-row row-text-only">
-            <div class="grid-col col-4">
-              <div class="grid-item-box">hanya teks</div>
-            </div>
-            <div class="grid-col col-4">
-              <div class="grid-item-box">hanya teks</div>
-            </div>
-            <div class="grid-col col-4">
-              <div class="grid-item-box">hanya teks</div>
-            </div>
+            <div class="grid-col col-4"><div class="grid-item-box">hanya teks</div></div>
+            <div class="grid-col col-4"><div class="grid-item-box">hanya teks</div></div>
+            <div class="grid-col col-4"><div class="grid-item-box">hanya teks</div></div>
           </div>
 
-          <!-- Row 2: Image & Text -->
           <div class="grid-row row-image-text">
-            <div class="grid-col col-6">
-              <div class="grid-item-box img-text-box">
-                <div class="box-icon">🖼️</div>
-                <span>Berisi gambar dan teks</span>
-              </div>
-            </div>
-            <div class="grid-col col-6">
-              <div class="grid-item-box img-text-box">
-                <div class="box-icon">🖼️</div>
-                <span>Berisi gambar dan teks</span>
-              </div>
-            </div>
+            <div class="grid-col col-6"><div class="grid-item-box img-text-box"><span>Berisi gambar dan teks</span></div></div>
+            <div class="grid-col col-6"><div class="grid-item-box img-text-box"><span>Berisi gambar dan teks</span></div></div>
           </div>
 
-          <!-- Row 3 & 4: Image Only -->
           <div class="grid-row row-image-only">
-            <div class="grid-col col-3">
-              <div class="grid-item-box img-only-box">gambar aja</div>
-            </div>
-            <div class="grid-col col-3">
-              <div class="grid-item-box img-only-box">gambar aja</div>
-            </div>
-            <div class="grid-col col-3">
-              <div class="grid-item-box img-only-box">gambar aja</div>
-            </div>
-            <div class="grid-col col-3">
-              <div class="grid-item-box img-only-box">gambar aja</div>
-            </div>
+            <div class="grid-col col-3"><div class="grid-item-box img-only-box">gambar aja</div></div>
+            <div class="grid-col col-3"><div class="grid-item-box img-only-box">gambar aja</div></div>
+            <div class="grid-col col-3"><div class="grid-item-box img-only-box">gambar aja</div></div>
+            <div class="grid-col col-3"><div class="grid-item-box img-only-box">gambar aja</div></div>
           </div>
         </div>
       </div>
     </section>
 
 
-    <!-- SOAL 5: FOLKCAST CARDS FROM API DATA -->
+    <!-- SOAL 5: FOLKCAST CARDS -->
     <section class="test-section" id="soal-5">
       <div class="section-header">
         <span class="soal-number">05</span>
-        <h2>Folkcast Media Cards (API Integration)</h2>
+        <h2>Folkcast Media Cards (API Integration - 3 Exact Cards)</h2>
       </div>
       <p class="section-desc">
-        Dynamic cards yang dirender dari data API WordPress Folkcast Brand UM.
+        Dynamic 3-cards layout dirender sesuai data referensi PDF.
       </p>
 
       <div class="folkcast-grid" id="folkcast-cards-container">
