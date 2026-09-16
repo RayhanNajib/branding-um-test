@@ -672,9 +672,11 @@ body {
 }
 
 .cc-icon svg {
-  width: 16px;
+  width: 14px;
   height: 16px;
   fill: #ffffff;
+  color: #ffffff;
+  stroke: #ffffff;
 }
 
 .cc-title {
