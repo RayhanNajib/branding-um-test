@@ -1,0 +1,738 @@
+/* CSS REGULASI BRANDING UNIVERSITAS NEGERI MALANG (UM) */
+
+:root {
+  --navy: #012060;
+  --navy-hover: #02236a;
+  --grey-slow: #cfd4df;
+  --grey-bg: #f5f6f9;
+  --grey-border: #e3e6ee;
+  --text-primary: #012060;
+  --text-muted: #64748b;
+  --white: #ffffff;
+  --black: #000000;
+  
+  --font-family: 'Albert Sans', 'Inter', sans-serif;
+  --radius-s: 4px;
+  --radius-l: 13px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 4px 12px rgba(1, 32, 96, 0.08);
+  --shadow-hover: 0 12px 28px rgba(1, 32, 96, 0.16);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--grey-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HEADER */
+.main-header {
+  background: linear-gradient(135deg, var(--navy) 0%, #00123a 100%);
+  color: var(--white);
+  padding: 48px 0;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.header-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 12px;
+}
+
+.main-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.main-header .subtitle {
+  font-size: 16px;
+  color: var(--grey-slow);
+  font-weight: 400;
+}
+
+/* TEST SECTIONS */
+.test-section {
+  background: var(--white);
+  border: 1px solid var(--grey-border);
+  border-radius: var(--radius-l);
+  padding: 36px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-sm);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.soal-number {
+  background: var(--navy);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.section-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   SOAL 1: BUTTON VARIANTS & SPECIFICATIONS
+   Padding: 12px horiz, 8px vert | Font: Medium 16px | Radius: 4px
+   ========================================================================== */
+.button-demo-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+  padding: 24px;
+  background: #f8fafc;
+  border-radius: var(--radius-s);
+  border: 1px dashed #cbd5e1;
+}
+
+.button-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.btn-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.um-btn {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px; /* 12px horizontal, 8px vertical per specification */
+  border-radius: var(--radius-s); /* 4px per specification */
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Button Navy: #012060 -> hover #cfd4df */
+.btn-navy {
+  background-color: #012060;
+  color: #ffffff;
+  border-color: #012060;
+}
+
+.btn-navy:hover {
+  background-color: #cfd4df;
+  color: #012060;
+  border-color: #cfd4df;
+}
+
+/* Button Abu: #cfd4df -> hover #012060 */
+.btn-grey {
+  background-color: #cfd4df;
+  color: #012060;
+  border-color: #cfd4df;
+}
+
+.btn-grey:hover {
+  background-color: #012060;
+  color: #ffffff;
+  border-color: #012060;
+}
+
+/* Button Transparan: transparent -> hover outline/bg */
+.btn-transparent {
+  background-color: transparent;
+  color: #012060;
+  border-color: #012060;
+}
+
+.btn-transparent:hover {
+  background-color: rgba(1, 32, 96, 0.08);
+  color: #012060;
+}
+
+
+/* ==========================================================================
+   SOAL 2: TAB MENU FRAGMENT
+   Desktop: Horizontal layout (sidebar tabs + content)
+   Mobile: Responsive stacked tabs
+   ========================================================================== */
+.tab-fragment-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  background: var(--white);
+  border: 1px solid var(--grey-border);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+}
+
+.tab-nav {
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  border-right: 1px solid var(--grey-border);
+  padding: 16px 0;
+}
+
+.tab-item {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 600;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  padding: 16px 24px;
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-item:hover {
+  color: var(--navy);
+  background: rgba(1, 32, 96, 0.04);
+}
+
+.tab-item.active {
+  color: var(--navy);
+  background: var(--white);
+  font-weight: 700;
+}
+
+.tab-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--navy);
+}
+
+.tab-content-area {
+  padding: 32px;
+}
+
+.tab-pane {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.tab-pane p {
+  font-size: 15px;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ==========================================================================
+   SOAL 3: KALENDER AKADEMIK & TANGGAL PENTING
+   ========================================================================== */
+.kalender-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.calendar-card, .kegiatan-card {
+  background: var(--white);
+  border: 1px solid var(--grey-border);
+  border-radius: var(--radius-s);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cal-month-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.cal-nav-btn {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: var(--navy);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-s);
+  cursor: pointer;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.cal-nav-btn:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.calendar-grid-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 12px;
+}
+
+.calendar-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #334155;
+  position: relative;
+}
+
+.cal-day.empty {
+  background: transparent;
+}
+
+.cal-day.has-event {
+  background: #e0e7ff;
+  color: var(--navy);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cal-day.has-event::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  width: 4px;
+  height: 4px;
+  background: var(--navy);
+  border-radius: 50%;
+}
+
+.cal-day.today {
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 700;
+}
+
+/* Tanggal Penting List */
+.kegiatan-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--navy);
+}
+
+.kegiatan-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.badge-semester {
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--grey-slow);
+  color: var(--navy);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.kegiatan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 340px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.kegiatan-item {
+  padding: 12px;
+  border-radius: var(--radius-s);
+  background: #f8fafc;
+  border-left: 3px solid var(--navy);
+  transition: var(--transition);
+}
+
+.kegiatan-item:hover {
+  background: #f1f5f9;
+}
+
+.kegiatan-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.kegiatan-date {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/* ==========================================================================
+   SOAL 4: HOVER CARD & 12-COLUMN GRID SYSTEM
+   ========================================================================== */
+.card-demo-wrapper {
+  margin-bottom: 40px;
+}
+
+.prestasi-card {
+  max-width: 400px;
+  background: var(--white);
+  border: 1px solid var(--grey-border);
+  border-radius: var(--radius-s); /* 4px per specification */
+  overflow: hidden;
+  box-shadow: none; /* Tanpa shadow per specification */
+  transition: var(--transition);
+  position: relative;
+}
+
+.prestasi-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.prestasi-card:hover .card-img {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 32, 96, 0.85); /* Navy transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.prestasi-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.overlay-link {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid var(--white);
+  border-radius: var(--radius-s);
+  transition: var(--transition);
+}
+
+.overlay-link:hover {
+  background: var(--white);
+  color: var(--navy);
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* 12 Columns Grid System */
+.um-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #f8fafc;
+  padding: 24px;
+  border-radius: var(--radius-s);
+  border: 1px solid var(--grey-border);
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.col-12 { grid-column: span 12; }
+.col-6  { grid-column: span 6; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+
+.grid-item-box {
+  background: var(--navy);
+  color: var(--white);
+  padding: 20px;
+  border-radius: var(--radius-s);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 70px;
+  transition: var(--transition);
+}
+
+.grid-item-box:hover {
+  background: var(--navy-hover);
+  transform: translateY(-2px);
+}
+
+.img-text-box {
+  background: #0242c6;
+}
+
+.img-only-box {
+  background: #426ab3;
+}
+
+
+/* ==========================================================================
+   SOAL 5: FOLKCAST API CARDS
+   ========================================================================== */
+.folkcast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.folkcast-card {
+  background: var(--white);
+  border: 1px solid var(--grey-border);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.folkcast-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.folkcast-thumb-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #1e293b;
+}
+
+.folkcast-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.folkcast-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-s);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.folkcast-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.folkcast-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.folkcast-meta {
+  margin-top: auto;
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/* FOOTER */
+.main-footer {
+  background: var(--navy);
+  color: var(--white);
+  padding: 28px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .tab-fragment-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--grey-border);
+    padding: 0;
+  }
+
+  .tab-item {
+    white-space: nowrap;
+    padding: 14px 20px;
+  }
+
+  .tab-item.active::before {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: auto;
+    height: 3px;
+  }
+
+  .kalender-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-row {
+    grid-template-columns: 1fr;
+  }
+
+  .col-12, .col-6, .col-4, .col-3 {
+    grid-column: span 1;
+  }
+}

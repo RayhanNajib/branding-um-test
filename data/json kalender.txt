@@ -1,0 +1,473 @@
+<script type="application/json" id="kaDataEmbed">
+  {
+    "tahun_akademik": "2026/2027",
+    "sumber": "Kalender-Akademik-2026-2027.pdf (um.ac.id)",
+    "kegiatan_pembelajaran": [
+      {
+        "kode": "A.1",
+        "kegiatan": "PKKMB (Pengenalan Kehidupan Kampus bagi Mahasiswa Baru)",
+        "smt_gasal_2026_2027": "10-14 Agustus 2026",
+        "smt_genap_2026_2027": null,
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.2",
+        "kegiatan": "Permohonan cuti kuliah on-line (Mahasiswa Lama)",
+        "smt_gasal_2026_2027": "29 Juni – 11 September 2026",
+        "smt_genap_2026_2027": "28 Des 2026 – 29 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.3.a",
+        "kegiatan": "Unggah Sajian Mata Kuliah Universiter (MKU)",
+        "smt_gasal_2026_2027": "29 Juni – 10 Juli 2026",
+        "smt_genap_2026_2027": "23 Nov – 04 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.3.b",
+        "kegiatan": "Mereview Kelengkapan Kurikulum dan Perangkat Pembelajaran (MKU)",
+        "smt_gasal_2026_2027": "06 – 10 Juli 2026",
+        "smt_genap_2026_2027": "23 Nov – 04 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.3.c",
+        "kegiatan": "Penyusunan jadwal kuliah oleh Program Studi",
+        "smt_gasal_2026_2027": "29 Juni – 10 Juli 2026",
+        "smt_genap_2026_2027": "23 Nov – 04 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.3.d",
+        "kegiatan": "Unggah Sajian Mata Kuliah, dan RPS pada laman SIAKAD oleh Subbag Akamawa Fakultas",
+        "smt_gasal_2026_2027": "13 Juli – 07 Agustus 2026",
+        "smt_genap_2026_2027": "07 Des 2026 – 04 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.3.e",
+        "kegiatan": "Simulasi dan Penetapan Kebutuhan Ruang Kuliah",
+        "smt_gasal_2026_2027": "13 Juli – 07 Agustus 2026",
+        "smt_genap_2026_2027": "07 Des 2026 – 04 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.3.f",
+        "kegiatan": "Penyisiran dan Review Kurikulum di SIAKAD",
+        "smt_gasal_2026_2027": "13 Juli – 07 Agustus 2026",
+        "smt_genap_2026_2027": "07 Des 2026 – 04 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.3.g",
+        "kegiatan": "Unggah Sajian Mata Kuliah di SIPEJAR",
+        "smt_gasal_2026_2027": "21 - 23 Agustus 2026",
+        "smt_genap_2026_2027": "14 – 17 Januari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.4.a",
+        "kegiatan": "Registrasi Administrasi/Pembayaran UKT (Mahasiswa Lama)",
+        "smt_gasal_2026_2027": "06 Juli – 13 Agustus 2026",
+        "smt_genap_2026_2027": "23 Des 2026 - 06 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.4.b",
+        "kegiatan": "Penyisiran Status Mahasiswa (Habis Masa Studi, Non Aktif, IPK Kurang 2.0)",
+        "smt_gasal_2026_2027": "24 Agustus – 09 Oktober 2026",
+        "smt_genap_2026_2027": "01 – 20 Februari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.5.a",
+        "kegiatan": "Pekan Kepenasihatan",
+        "smt_gasal_2026_2027": "14 – 20 Agustus 2026",
+        "smt_genap_2026_2027": "06-13 Januari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.5.b",
+        "kegiatan": "Registrasi Akademik (KRS Online)",
+        "smt_gasal_2026_2027": "14 – 18 Agustus 2026",
+        "smt_genap_2026_2027": "07-11 Januari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.5.c",
+        "kegiatan": "Modifikasi KRS",
+        "smt_gasal_2026_2027": "19 – 20 Agustus 2026",
+        "smt_genap_2026_2027": "12-13 Januari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.5.d",
+        "kegiatan": "Mengecek eligibitas PISN",
+        "smt_gasal_2026_2027": "24 Agustus – 11 Desember 2026",
+        "smt_genap_2026_2027": "18 Januari – 14 Mei 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.6.a",
+        "kegiatan": "Kartu Rencana Ekstrakurikuler (KRE) online Kemahasiswaan",
+        "smt_gasal_2026_2027": "14 – 18 Agustus 2026",
+        "smt_genap_2026_2027": "06-14 Januari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.6.b",
+        "kegiatan": "Pelaksanaan Ekstrakurikuler",
+        "smt_gasal_2026_2027": "24 Agustus – 11 Desember 2026",
+        "smt_genap_2026_2027": "18 Jan – 02 Agustus 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.6.c",
+        "kegiatan": "Pengajuan Capaian KRE oleh Mahasiswa",
+        "smt_gasal_2026_2027": "24 Agustus – 11 Desember 2026",
+        "smt_genap_2026_2027": "18 Jan – 02 Agustus 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.6.d",
+        "kegiatan": "Verifikasi Capaian KRE oleh Verifikator Fakultas",
+        "smt_gasal_2026_2027": "24 Agustus – 11 Desember 2026",
+        "smt_genap_2026_2027": "18 Jan – 02 Agustus 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.6.e",
+        "kegiatan": "Validasi Capaian KRE oleh Validator Universitas",
+        "smt_gasal_2026_2027": "24 Agustus – 30 Desember 2026",
+        "smt_genap_2026_2027": "18 Jan – 03 Agustus 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.7.inbound.a",
+        "kegiatan": "Cakra Widya Inbound - Pendaftaran (kampusmerdeka.um.ac.id)",
+        "smt_gasal_2026_2027": "29 Juni – 13 Agustus 2026",
+        "smt_genap_2026_2027": "07 - 31 Desember 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.7.inbound.b",
+        "kegiatan": "Cakra Widya Inbound - Validasi Peserta",
+        "smt_gasal_2026_2027": "03 – 13 Agustus 2026",
+        "smt_genap_2026_2027": "04-07 Januari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.7.inbound.c",
+        "kegiatan": "Cakra Widya Inbound - Registrasi Akademik (KRS) oleh operator fakultas",
+        "smt_gasal_2026_2027": "14 – 21 Agustus 2026",
+        "smt_genap_2026_2027": "13-14 Januari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "A.7.outbound.a",
+        "kegiatan": "Cakra Widya Outbound - Pendaftaran",
+        "smt_gasal_2026_2027": "06 Juli – 13 Agustus 2026",
+        "smt_genap_2026_2027": "21 Des 2026 – 12 Jan 2027",
+        "smt_antara_2026_2027": "31 Mei – 03 Juni 2027"
+      },
+      {
+        "kode": "A.7.outbound.b",
+        "kegiatan": "Cakra Widya Outbound - Registrasi Akademik (KRS oleh operator fakultas)",
+        "smt_gasal_2026_2027": "14 – 21 Agustus 2026",
+        "smt_genap_2026_2027": "13-14 Januari 2027",
+        "smt_antara_2026_2027": "01 – 04 Juni 2027"
+      },
+      {
+        "kode": "A.8.a",
+        "kegiatan": "Semester Antara - Penjaringan Mata Kuliah yang disajikan",
+        "smt_gasal_2026_2027": null,
+        "smt_genap_2026_2027": null,
+        "smt_antara_2026_2027": "03 – 14 Mei 2027"
+      },
+      {
+        "kode": "A.8.b",
+        "kegiatan": "Semester Antara - Unggah sajian Mata Kuliah dan RPS melalui SIAKAD",
+        "smt_gasal_2026_2027": null,
+        "smt_genap_2026_2027": null,
+        "smt_antara_2026_2027": "24 – 28 Mei 2027"
+      },
+      {
+        "kode": "A.8.c",
+        "kegiatan": "Semester Antara - Registrasi Semester Antara oleh mahasiswa di SIAKAD",
+        "smt_gasal_2026_2027": null,
+        "smt_genap_2026_2027": null,
+        "smt_antara_2026_2027": "31 Mei – 03 Juni 2027"
+      },
+      {
+        "kode": "A.8.d",
+        "kegiatan": "Semester Antara - Registrasi Akademik/KRS online oleh mahasiswa di SIAKAD + bayar sks di Bank",
+        "smt_gasal_2026_2027": null,
+        "smt_genap_2026_2027": null,
+        "smt_antara_2026_2027": "01-04 Juni 2027"
+      },
+      {
+        "kode": "B.1",
+        "kegiatan": "Masa Perkuliahan",
+        "smt_gasal_2026_2027": "24 Agust – 11 Des 2026",
+        "smt_genap_2026_2027": "18 Januari – 14 Mei 2027",
+        "smt_antara_2026_2027": "07 Jun – 30 Juli 2027"
+      },
+      {
+        "kode": "B.2",
+        "kegiatan": "Ujian Tengah Semester",
+        "smt_gasal_2026_2027": "12 – 16 Oktober 2026",
+        "smt_genap_2026_2027": "15-19 Maret 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "B.3",
+        "kegiatan": "Ujian Akhir Semester",
+        "smt_gasal_2026_2027": "07 – 11 Desember 2026",
+        "smt_genap_2026_2027": "10-14 Mei 2027",
+        "smt_antara_2026_2027": "26 – 30 Juli 2027"
+      },
+      {
+        "kode": "B.4",
+        "kegiatan": "Ujian Bersama Khusus MKU",
+        "smt_gasal_2026_2027": "14 – 16 Desember 2026",
+        "smt_genap_2026_2027": "18-19 Mei 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.1.a",
+        "kegiatan": "Tugas Akhir Skripsi dan Tesis - Mahasiswa mengajukan tema penelitian ke Kelompok Bidang Keahlian (KBK) untuk tugas akhir",
+        "smt_gasal_2026_2027": "06– 21 Juli 2026",
+        "smt_genap_2026_2027": "30 Nov – 23 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.1.b",
+        "kegiatan": "Tugas Akhir Skripsi dan Tesis - Ketua Program Studi membagi dosen pembimbing sesuai dengan tema/minat penelitian, Subag Akamawa mengentri dosen pembimbing di SIAKAD",
+        "smt_gasal_2026_2027": "09 – 24 Juli 2026",
+        "smt_genap_2026_2027": "30 Nov – 23 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.1.c",
+        "kegiatan": "Tugas Akhir Skripsi dan Tesis - Wakil Dekan I/Wakil Direktur Sekolah Pascasarjana menerbitkan Surat Tugas Dosen Pembimbing",
+        "smt_gasal_2026_2027": "09 – 30 Juli 2026",
+        "smt_genap_2026_2027": "03 – 28 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.1.d",
+        "kegiatan": "Tugas Akhir Skripsi dan Tesis - Dosen mendownload Surat Tugas dosen pembimbing melalui Siakad",
+        "smt_gasal_2026_2027": "Mulai 31 Juli 2026",
+        "smt_genap_2026_2027": "Mulai 29 Desember 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.1.e",
+        "kegiatan": "Tugas Akhir Skripsi dan Tesis - Mahasiswa mengajukan judul tugas akhir kepada dosen pembimbing",
+        "smt_gasal_2026_2027": "31 Juli – 20 Agustus 2026",
+        "smt_genap_2026_2027": "29 Des 2026 - 14 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.1.f",
+        "kegiatan": "Tugas Akhir Skripsi dan Tesis - Dekan/Direktur Sekolah Pascasarjana menerbitkan Surat Tugas Dosen Pembimbing beserta dengan judul tugas akhir",
+        "smt_gasal_2026_2027": "31 Juli – 21 Agustus 2026",
+        "smt_genap_2026_2027": "29 Des 2026 – 15 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.1.g",
+        "kegiatan": "Tugas Akhir Skripsi dan Tesis - Pembimbingan, Seminar Proposal, dan Pelaksanaan Ujian Tugas Akhir/Skripsi/Tesis",
+        "smt_gasal_2026_2027": "24 Agustus – 23 Desember 2026",
+        "smt_genap_2026_2027": "18 Januari – 25 Mei 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.1.h",
+        "kegiatan": "Tugas Akhir Skripsi dan Tesis - Pengisian Nilai (DNA) pada SIAKAD",
+        "smt_gasal_2026_2027": "24 Agustus – 28 Desember 2026",
+        "smt_genap_2026_2027": "18 Januari – 26 Mei 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.2.a",
+        "kegiatan": "Tugas Akhir Disertasi - Mahasiswa mengajukan tema penelitian ke Kelompok Bidang Keahlian (KBK) untuk tugas akhir",
+        "smt_gasal_2026_2027": "06– 21 Juli 2026",
+        "smt_genap_2026_2027": "30 Nov – 23 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.2.b",
+        "kegiatan": "Tugas Akhir Disertasi - Ketua Program Studi membagi dosen pembimbing sesuai dengan tema/minat penelitian, Subag Akamawa mengentri dosen pembimbing di SIAKAD",
+        "smt_gasal_2026_2027": "09 – 24 Juli 2026",
+        "smt_genap_2026_2027": "30 Nov – 23 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.2.c",
+        "kegiatan": "Tugas Akhir Disertasi - Wakil Dekan I/Wakil Direktur Sekolah Pascasarjana menerbitkan Surat Tugas Dosen Pembimbing",
+        "smt_gasal_2026_2027": "09 – 30 Juli 2026",
+        "smt_genap_2026_2027": "03 – 28 Des 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.2.d",
+        "kegiatan": "Tugas Akhir Disertasi - Dosen mendownload Surat Tugas dosen pembimbing melalui Siakad",
+        "smt_gasal_2026_2027": "Mulai 31 Juli 2026",
+        "smt_genap_2026_2027": "Mulai 29 Desember 2026",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.2.e",
+        "kegiatan": "Tugas Akhir Disertasi - Mahasiswa mengajukan judul tugas akhir kepada dosen pembimbing",
+        "smt_gasal_2026_2027": "31 Juli – 20 Agustus 2026",
+        "smt_genap_2026_2027": "29 Des 2026 - 14 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.2.f",
+        "kegiatan": "Tugas Akhir Disertasi - Dekan/Direktur Sekolah Pascasarjana menerbitkan Surat Tugas Dosen Pembimbing beserta dengan judul tugas akhir",
+        "smt_gasal_2026_2027": "31 Juli – 21 Agustus 2026",
+        "smt_genap_2026_2027": "29 Des 2026 - 15 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.2.g",
+        "kegiatan": "Tugas Akhir Disertasi - Pembimbingan, Seminar Proposal, dan Pelaksanaan Ujian Disertasi",
+        "smt_gasal_2026_2027": "24 Agustus – 23 Desember 2026",
+        "smt_genap_2026_2027": "18 Januari – 02 Agust 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "C.2.h",
+        "kegiatan": "Tugas Akhir Disertasi - Batas akhir pengisian Nilai (DNA) pada SIAKAD",
+        "smt_gasal_2026_2027": "24 Agustus – 28 Desember 2026",
+        "smt_genap_2026_2027": "18 Januari – 03 Agust 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "D.1",
+        "kegiatan": "Awal perkuliahan (minggu ke-4 dan 5)",
+        "smt_gasal_2026_2027": "14 – 25 September 2026",
+        "smt_genap_2026_2027": "08-19 Februari 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "D.2",
+        "kegiatan": "Pertengahan perkuliahan (minggu ke-9 dan 10)",
+        "smt_gasal_2026_2027": "19 – 30 Oktober 2026",
+        "smt_genap_2026_2027": "22 Maret - 02 April 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "D.3",
+        "kegiatan": "Akhir perkuliahan (1 minggu setelah UAS s.d. 1 minggu setelah DNA diupload)",
+        "smt_gasal_2026_2027": "14 – 31 Desember 2026",
+        "smt_genap_2026_2027": "24 Mei – 04 Juni 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "E.1",
+        "kegiatan": "Verifikasi Kehadiran Mahasiswa (minggu ke 15)",
+        "smt_gasal_2026_2027": "30 Nov – 04 Desember 2026",
+        "smt_genap_2026_2027": "03-07 Mei 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "E.2",
+        "kegiatan": "Pengisian Nilai (DNA) online pada SIAKAD oleh dosen",
+        "smt_gasal_2026_2027": "08 – 20 Desember 2026",
+        "smt_genap_2026_2027": "11-23 Mei 2027",
+        "smt_antara_2026_2027": "27 Juli – 02 Agust 2027"
+      },
+      {
+        "kode": "E.3",
+        "kegiatan": "Evaluasi PBM terhadap dosen dilakukan oleh mahasiswa secara online (mulai UAS s.d. sebelum KHS)",
+        "smt_gasal_2026_2027": "07 – 21 Desember 2026",
+        "smt_genap_2026_2027": "11-24 Mei 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "E.4",
+        "kegiatan": "Survei Kepuasan Layanan Publik oleh mahasiswa, dosen, dan tendik (syarat melihat KHS khusus bagi mahasiswa) pada laman https://survei.um.ac.id/",
+        "smt_gasal_2026_2027": "07 – 21 Desember 2026",
+        "smt_genap_2026_2027": "28 Des 2026 - 15 Jan 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "E.5",
+        "kegiatan": "Kartu Hasil Studi (KHS) Online",
+        "smt_gasal_2026_2027": "22 Desember 2026",
+        "smt_genap_2026_2027": "25 Mei 2027",
+        "smt_antara_2026_2027": "03 Agustus 2027"
+      },
+      {
+        "kode": "E.6",
+        "kegiatan": "Masa Sanggah Nilai KHS",
+        "smt_gasal_2026_2027": "22 – 24 Desember 2026",
+        "smt_genap_2026_2027": "25-26 Mei 2027",
+        "smt_antara_2026_2027": null,
+        "catatan": "Gasal: *mhs 22-23 Desember 2026, *dosen 22-24 Desember 2026 | Genap: *mhs 25-26 Mei 2027, *dosen 25-26 Mei 2027"
+      },
+      {
+        "kode": "E.7",
+        "kegiatan": "Kartu Hasil Ekstrakurikuler (KHE) online",
+        "smt_gasal_2026_2027": "22 Desember 2026",
+        "smt_genap_2026_2027": "03 Agustus 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "E.8",
+        "kegiatan": "Entri DNA (Cakra Widya Outbound)",
+        "smt_gasal_2026_2027": "08 – 20 Desember 2026",
+        "smt_genap_2026_2027": "10 – 28 Mei 2027",
+        "smt_antara_2026_2027": null
+      },
+      {
+        "kode": "E.9",
+        "kegiatan": "Pekan Audit Mutu Internal (AMI)",
+        "smt_gasal_2026_2027": "02-27 November 2026",
+        "smt_genap_2026_2027": "02-27 November 2026",
+        "smt_antara_2026_2027": null,
+        "catatan": "*Perkuliahan minggu ke 11 dan 14; periode berlaku sama untuk smt gasal & genap"
+      },
+      {
+        "kode": "E.10",
+        "kegiatan": "Berakhirnya Semester",
+        "smt_gasal_2026_2027": "30 Desember 2026",
+        "smt_genap_2026_2027": "28 Mei 2027",
+        "smt_antara_2026_2027": "05 Agustus 2027"
+      },
+      {
+        "kode": "F.1",
+        "kegiatan": "Batas akhir yudisium di fakultas",
+        "smt_gasal_2026_2027": "29 Desember 2026",
+        "smt_genap_2026_2027": "27 Mei 2027",
+        "smt_antara_2026_2027": "04 Agustus 2027"
+      },
+      {
+        "kode": "F.2",
+        "kegiatan": "Batas Akhir Pengiriman laporan kelulusan (SK Yudisium, Verifikasi Biodata dan Data Akademik, DHSY, dll.) dari fakultas ke Direktorat Pendidikan",
+        "smt_gasal_2026_2027": "06 Januari 2027",
+        "smt_genap_2026_2027": "03 Juni 2027",
+        "smt_antara_2026_2027": "11 Agustus 2027"
+      },
+      {
+        "kode": "G.1",
+        "kegiatan": "Pelaporan Biodata dan Histori Mahasiswa; Mata Kuliah dan Kurikulum; dan Kelas Perkuliahan (check point 1)",
+        "smt_gasal_2026_2027": "07 September – 23 Oktober 2026",
+        "smt_genap_2026_2027": "01 Feb – 05 Maret 2027",
+        "smt_antara_2026_2027": "21 Juni – 09 Juli 2027",
+        "catatan": "*2 minggu setelah dimulainya perkuliahan"
+      },
+      {
+        "kode": "G.2",
+        "kegiatan": "Nilai dan Kelulusan (check point 2)",
+        "smt_gasal_2026_2027": "18 Januari – 19 Maret 2027",
+        "smt_genap_2026_2027": "31 Mei – 06 Agustus 2027",
+        "smt_antara_2026_2027": "23 Agustus – 08 Oktober 2027"
+      }
+    ]
+  }
+</script>
