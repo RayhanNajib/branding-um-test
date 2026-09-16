@@ -630,17 +630,18 @@ body {
 
 /* Expanding CTA Button at Top Left (image_2ae114 -> image_207803) */
 .cc-cta-btn {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
   display: inline-flex;
   align-items: center;
-  align-self: flex-start;
   background: var(--navy);
   border-radius: 8px;
   padding: 10px 12px;
-  margin-top: 140px; /* Positioned right at bottom edge of banner image */
-  transition: padding 0.35s ease, background 0.35s ease;
+  transition: padding 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.35s ease, box-shadow 0.35s ease;
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .cc-cta-text {
